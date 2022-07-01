@@ -1,0 +1,32 @@
+[package]
+name = "fsetui"
+version = "0.1.0"
+edition = "2021"
+description = ""
+readme = "README.md"
+homepage = "https://github.com/celeo/fsetui"
+repository = "https://github.com/celeo/fsetui"
+documentation = "https://docs.rs/fsetui"
+license = "MIT OR Apache-2.0"
+exclude = [
+  ".github"
+]
+keywords = []
+categories = []
+
+[dependencies]
+anyhow = "1.0.58"
+chrono = "0.4.19"
+crossterm = "0.23.2"
+dirs = "4.0.0"
+fern = "0.6.1"
+log = "0.4.17"
+rayon = "1.5.3"
+reqwest = { version = "0.11.11", features = ["blocking", "json"] }
+serde = { version = "1.0.137", features = ["derive"] }
+serde_json = "1.0.81"
+tui = "0.18.0"
+webbrowser = "0.7.1"
+
+[dev-dependencies]
+mockito = "0.31.0"
